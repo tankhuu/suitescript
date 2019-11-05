@@ -1,0 +1,11 @@
+{
+  "paths": {
+    "underscore": "/SuiteScripts/precita-netsuite/lib/underscore",
+    "erply_api": "/SuiteScripts/precita-netsuite/lib/erply_api",
+    "moment": "/SuiteScripts/precita-netsuite/lib/moment.min",
+    "helpers": "/SuiteScripts/precita-netsuite/lib/helpers",
+    "configurations": "/SuiteScripts/precita-netsuite/lib/configurations",
+    "ItemService": "/SuiteScripts/precita-netsuite/services/item.service",
+    "TransferOrderService": "/SuiteScripts/precita-netsuite/services/transfer-order.service"
+  }
+}

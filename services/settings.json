@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "underscore": "/SuiteScripts/precita-netsuite/lib/underscore",
+    "moment": "/SuiteScripts/precita-netsuite/lib/moment.min"
+  }
+}

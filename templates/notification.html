@@ -1,0 +1,113 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>${content.subject}</title>
+    <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <table style="background-color: #f6f6f6; width: 100%;">
+        <tr>
+            <td></td>
+            <td style="display: block !important; max-width: 600px !important; margin: 0 auto !important; clear: both !important;"
+                width="800">
+                <div style="max-width: 800px; margin: 0 auto; display: block; padding: 20px;">
+                    <table style="background: #fff; border: 1px solid #e9e9e9; border-radius: 3px;" width="100%"
+                        cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="padding: 20px; text-align: center;">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tr style="background-color: #2f373e">
+                                        <td style="padding:20px 0 0;">
+                                            <h2 style="color: #FFF">
+                                                Cửa hàng gọi giúp khách hàng của các đơn hàng sau:
+                                            </h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 0 20px;">
+                                            <h4 style="margin-bottom: 5px; margin-top: 10px; text-align: left;">
+                                                Khách Hàng ${so.fullName}:
+                                            </h4>
+                                            <table style="margin: 10px auto; text-align: left; width: 90%;">
+                                                <tr>
+                                                    <td>
+                                                        <table style="width: 100%;" cellpadding="5" cellspacing="5">
+                                                            <tr>
+                                                                <td style="border-top: #eee 1px solid;">
+                                                                    <strong>Phone Number</strong></td>
+                                                                <td
+                                                                    style="border-top: #eee 1px solid; text-align: left;">
+                                                                    ${so.phoneNumber}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-top: #eee 1px solid;">
+                                                                    <strong>Address</strong></td>
+                                                                <td
+                                                                    style="border-top: #eee 1px solid; text-align: left;">
+                                                                    ${so.address}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-top: #eee 1px solid;">
+                                                                    <strong>Order Id</strong></td>
+                                                                <td
+                                                                    style="border-top: #eee 1px solid; text-align: left;">
+                                                                    ${so.id}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-top: #eee 1px solid;">
+                                                                    <strong>Items</strong></td>
+                                                                <td
+                                                                    style="border-top: #eee 1px solid; text-align: left;">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>Item</th>
+                                                                            <th>Item Name</th>
+                                                                            <th>Sale Price</th>
+                                                                            <th>Note</th>
+                                                                        </tr>
+                                                                        <#list content.items as item>
+                                                                            <tr>
+                                                                                <td>${item.id}</td>
+                                                                                <td>${item.name}</td>
+                                                                                <td>${item.salePrice}</td>
+                                                                                <td>${item.note}</td>
+                                                                            </tr>
+                                                                        </#list>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="width: 100%;
+                        clear: both;
+                        color: #999;
+                        padding: 20px;">
+                        <p style="margin-top: 15px; text-align: center;">
+                            <small>Precita &copy; 2019</small>
+                        </p>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
